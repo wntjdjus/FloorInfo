@@ -1,0 +1,11 @@
+.videoArea{
+    margin-right: 70px;
+    border: 1px solid red;
+    height: 760px;
+}
+.info{
+    margin-top: 400px;
+    margin-right: 10px;
+    border: 1px solid red;
+    height: 280px;
+}

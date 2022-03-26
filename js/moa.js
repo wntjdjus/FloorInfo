@@ -4,6 +4,7 @@ var before = "";
 var src = "";
 var floor = ["1층","2층","루트2층","3층","파이층"];
 var id = document.getElementById("id").getAttribute("value");
+var detailOrder = 1;
 
 document.getElementsByClassName("tablink")[0].click();
 
@@ -52,202 +53,202 @@ var room = [
     ['교육실']
 ];
 var last = [
-    [2,3,2,1],
-    [3],
+    [1,2,1,1],
     [2],
-    [2],
+    [1],
+    [1],
     [1]
 ];
 var isPillar = [
     [
         [],
-        ['N','Y','Y','Y'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [0,7,7,7],
+        [0,7,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['Y','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [7,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['Y','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [7,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['Y','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [7,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['N','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [0,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ]
 ];
 var isPillar1 = [
     [
         [],
-        ['Y','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [7,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['N','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [0,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['N','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [0,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['N','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [0,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['N','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [0,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ]
 ];
 var isPillar2 = [
     [
         [],
-        ['Y','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [7,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['N','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [0,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['N','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [0,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['N','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [0,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['N','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [0,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ]
 ];
 var isWall = [
     [
         [],
-        ['N','N','Y','N'],
-        ['N','Y','N','N'],
-        ['N','N','N','N']
+        [0,0,7,0],
+        [0,7,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['N','N','N','N'],
-        ['Y','N','N','N'],
-        ['N','N','N','N']
+        [0,0,0,0],
+        [7,0,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['Y','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [7,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['Y','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [7,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['N','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [0,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ]
 ];
 var isSlab = [
     [
         [],
-        ['N','N','Y','N'],
-        ['N','Y','N','N'],
-        ['N','N','N','N']
+        [0,0,7,0],
+        [0,7,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['Y','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [7,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['Y','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [7,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['Y','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [7,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['N','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [0,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ]
 ];
 var isBo = [
     [
         [],
-        ['N','N','N','N'],
-        ['N','Y','N','N'],
-        ['N','N','N','N']
+        [0,0,0,0],
+        [0,7,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['N','N','N','N'],
-        ['Y','N','N','N'],
-        ['N','N','N','N']
+        [0,0,0,0],
+        [7,0,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['Y','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [7,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['Y','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [7,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ],
     [
         [],
-        ['N','N','N','N'],
-        ['N','N','N','N'],
-        ['N','N','N','N']
+        [0,0,0,0],
+        [0,0,0,0],
+        [0,0,0,0]
     ]
 ];
 
@@ -264,29 +265,25 @@ function tabHandler(e){
     videoHandler(num,"main");
 }
 
-// for(var i=0;i<vl;i++){
-//     videos[i].addEventListener('ended',videoEndHandler,false);
-// }
-
 //비디오재생중함수
 function videoHandler(num, name){
     if(name == "main"){
-        if(isPillar[id][order][num] == 'Y'){
+        if(isPillar[id][order][num] > 0){
             buttons[num].appendChild(makePillar());
         }
-        if(isPillar1[id][order][num] == 'Y'){
+        if(isPillar1[id][order][num] > 0){
             buttons[num].appendChild(makePillar1());
         }
-        if(isPillar2[id][order][num] == 'Y'){
+        if(isPillar2[id][order][num] > 0){
             buttons[num].appendChild(makePillar2());
         }
-        if(isWall[id][order][num] == 'Y'){
+        if(isWall[id][order][num] > 0){
             buttons[num].appendChild(makeWall());
         }
-        if(isSlab[id][order][num] == 'Y'){
+        if(isSlab[id][order][num] > 0){
             buttons[num].appendChild(makeSlab());
         }
-        if(isBo[id][order][num] == 'Y'){
+        if(isBo[id][order][num] > 0){
             buttons[num].appendChild(makeBo());
         }
         if(last[id][num] == order){
@@ -296,6 +293,34 @@ function videoHandler(num, name){
         }else{
             buttons[num].appendChild(makeSkip());
         }
+        buttons[num].style.visibility = "visible";
+    }else{
+        if(name == "pillar"){
+            if(isPillar[id][order][num] > detailOrder){
+                buttons[num].appendChild(makePillar("Y"));
+            }
+        }else if(name == "pillar1"){
+            if(isPillar1[id][order][num] > detailOrder){
+                buttons[num].appendChild(makePillar1("Y"));
+            }
+        }else if(name == "pillar2"){
+            if(isPillar2[id][order][num] > detailOrder){
+                buttons[num].appendChild(makePillar2("Y"));
+            }
+        }else if(name == "wall"){
+            if(isWall[id][order][num] > detailOrder){
+                buttons[num].appendChild(makeWall("Y"));
+            }
+        }else if(name == "slab"){
+            if(isSlab[id][order][num] > detailOrder){
+                buttons[num].appendChild(makeSlab("Y"));
+            }
+        }else if(name == "bo"){
+            if(isBo[id][order][num] > detailOrder){
+                buttons[num].appendChild(makeBo("Y"));
+            }
+        }
+        detailOrder++;
         buttons[num].style.visibility = "visible";
     }
 }
@@ -310,10 +335,12 @@ function buttonHandler(e){
 
         buttons[num].innerHTML = '';
         if(type == "pillarButton"){
-            src = "video/"+floor[id]+"/"+room[id][num]+"_"+order+"_기둥.mp4";
+            src = "video/"+floor[id]+"/"+room[id][num]+"_"+order+"_기둥_"+detailOrder+".mp4";
             name = "pillar";
             buttons[num].appendChild(makeBack());
+            videoHandler(num,name);
         }else if(type == "backButton"){
+            detailOrder = 1;
             buttons[num].style.visibility = "hidden";
             src = "video/"+floor[id]+"/"+room[id][num]+"_"+order+"_1.mp4";
             videoHandler(num,name);
@@ -328,25 +355,30 @@ function buttonHandler(e){
             src = "video/"+floor[id]+"/"+room[id][num]+"_"+order+"_1.mp4";
             videoHandler(num,name);
         }else if(type == "wallButton"){
-            src = "video/"+floor[id]+"/"+room[id][num]+"_"+order+"_벽체.mp4";
+            src = "video/"+floor[id]+"/"+room[id][num]+"_"+order+"_벽체_"+detailOrder+".mp4";
             name = "wall";
             buttons[num].appendChild(makeBack());
+            videoHandler(num,name);
         }else if(type == "slabButton"){
-            src = "video/"+floor[id]+"/"+room[id][num]+"_"+order+"_슬래브.mp4";
+            src = "video/"+floor[id]+"/"+room[id][num]+"_"+order+"_슬래브_"+detailOrder+".mp4";
             name = "slab";
             buttons[num].appendChild(makeBack());
+            videoHandler(num,name);
         }else if(type == "boButton"){
-            src = "video/"+floor[id]+"/"+room[id][num]+"_"+order+"_보.mp4";
+            src = "video/"+floor[id]+"/"+room[id][num]+"_"+order+"_보_"+detailOrder+".mp4";
             name = "bo";
             buttons[num].appendChild(makeBack());
+            videoHandler(num,name);
         }else if(type == "pillarButton1"){
-            src = "video/"+floor[id]+"/"+room[id][num]+"_"+order+"_기둥1.mp4";
+            src = "video/"+floor[id]+"/"+room[id][num]+"_"+order+"_기둥1_"+detailOrder+".mp4";
             name = "pillar1";
             buttons[num].appendChild(makeBack());
+            videoHandler(num,name);
         }else if(type == "pillarButton2"){
-            src = "video/"+floor[id]+"/"+room[id][num]+"_"+order+"_기둥2.mp4";
+            src = "video/"+floor[id]+"/"+room[id][num]+"_"+order+"_기둥2_"+detailOrder+".mp4";
             name = "pillar2";
             buttons[num].appendChild(makeBack());
+            videoHandler(num,name);
         }
 
         videos[num].src = src;
@@ -375,45 +407,69 @@ function modalOpenHandler(num){
         }
     }
 }
-function makePillar(){
+function makePillar(flag){
     var button = document.createElement("button");
     button.setAttribute("class","pillarButton");
-    button.innerText = "기둥";
+    if(flag == "Y"){
+        button.innerText = "NEXT";
+    }else{
+        button.innerText = "기둥";
+    }
     button.addEventListener('click',buttonHandler,false);
     return button;
 }
-function makePillar1(){
+function makePillar1(flag){
     var button = document.createElement("button");
     button.setAttribute("class","pillarButton1");
-    button.innerText = "기둥C1";
+    if(flag == "Y"){
+        button.innerText = "NEXT";
+    }else{
+        button.innerText = "기둥C1";
+    }
     button.addEventListener('click',buttonHandler,false);
     return button;
 }
-function makePillar2(){
+function makePillar2(flag){
     var button = document.createElement("button");
     button.setAttribute("class","pillarButton2");
-    button.innerText = "기둥C2";
+    if(flag == "Y"){
+        button.innerText = "NEXT";
+    }else{
+        button.innerText = "기둥C2";
+    }
     button.addEventListener('click',buttonHandler,false);
     return button;
 }
-function makeWall(){
+function makeWall(flag){
     var button = document.createElement("button");
     button.setAttribute("class","wallButton");
-    button.innerText = "벽체";
+    if(flag == "Y"){
+        button.innerText = "NEXT";
+    }else{
+        button.innerText = "벽체";
+    }
     button.addEventListener('click',buttonHandler,false);
     return button;
 }
-function makeSlab(){
+function makeSlab(flag){
     var button = document.createElement("button");
     button.setAttribute("class","slabButton");
-    button.innerText = "슬래브";
+    if(flag == "Y"){
+        button.innerText = "NEXT";
+    }else{
+        button.innerText = "슬래브";
+    }
     button.addEventListener('click',buttonHandler,false);
     return button;
 }
-function makeBo(){
+function makeBo(flag){
     var button = document.createElement("button");
     button.setAttribute("class","boButton");
-    button.innerText = "보";
+    if(flag == "Y"){
+        button.innerText = "NEXT";
+    }else{
+        button.innerText = "보";
+    }
     button.addEventListener('click',buttonHandler,false);
     return button;
 }
@@ -421,6 +477,8 @@ function makeBack(){
     var button = document.createElement("button");
     button.setAttribute("class","backButton");
     button.innerText = "뒤로가기";
+    button.style.position = "absolute";
+    button.style.left = "85%";
     button.addEventListener('click',buttonHandler,false);
     return button;
 }

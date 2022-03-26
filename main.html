@@ -12,9 +12,10 @@
     <style>
         @import url("css/index.css");
         @import url("css/floor.css");
+        @import url("css/main.css");
         @import url("css/w3.css");
 
-        html, body{
+        html, body {
             font-family: 'hi';
         }
     </style>
@@ -28,115 +29,13 @@
 <body>
 <div class="wrap">
     <div class="main_left">
-        <div class="moa_title">
-            <div class="text_center moa_title_bar">
-                <div>
-                    <a class="title">서울시립과학관 한 눈에 보기</a>
-                </div>
+        <div class="main_left_box">
+            <div class="floor-left">
+                <div class="videoArea"></div>
             </div>
-            <div class="text_center moa_title_sub">
-                <div>
-                </div>
-                <div>
-                    <a class="a_button floor_selected" href="moa.html">1F</a>
-                </div>
-                <div>
-                    <a class="a_button" href="moa2.html">2F</a>
-                </div>
-                <div>
-                    <a class="a_button" href="moaRoot2.html">√2F</a>
-                </div>
-                <div>
-                    <a class="a_button" href="moa3.html">3F</a>
-                </div>
-                <div>
-                </div>
-            </div>
-        </div>
-        <div class="moa_body">
-            <div class="moa_item">
-                <div class="moa_item_in" value="0">
-                    <div class="moa_img text_center">
-                        <div>
-                            <a><img src="img/moa/메인홀.png"></a>
-                        </div>
-                    </div>
-                    <div class="moa_info text_center">
-                        <div>
-                            <a>1F-메인홀</a>
-                        </div>
-                    </div>
-                    <div class="moa_buttons">
-                        <div class="moa_button text_center">
-                            <div>
-                                <a><i class="fas fa-search"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="moa_item">
-                <div class="moa_item_in" value="1">
-                    <div class="moa_img text_center">
-                        <div>
-                            <a><img src="img/moa/G전시실.png"></a>
-                        </div>
-                    </div>
-                    <div class="moa_info text_center">
-                        <div>
-                            <a>1F-G전시실</a>
-                        </div>
-                    </div>
-                    <div class="moa_buttons">
-                        <div class="moa_button text_center">
-                            <div>
-                                <a><i class="fas fa-search"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="moa_item">
-                <div class="moa_item_in" value="2">
-                    <div class="moa_img text_center">
-                        <div>
-                            <a><img src="img/moa/사이언스홀.png"></a>
-                        </div>
-                    </div>
-                    <div class="moa_info text_center">
-                        <div>
-                            <a>1F-사이언스홀</a>
-                        </div>
-                    </div>
-                    <div class="moa_buttons">
-                        <div class="moa_button text_center">
-                            <div>
-                                <a><i class="fas fa-search"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="moa_item">
-                <div class="moa_item_in" value="3">
-                    <div class="moa_img text_center">
-                        <div>
-                            <a><img src="img/moa/도서관.png"></a>
-                        </div>
-                    </div>
-                    <div class="moa_info text_center">
-                        <div>
-                            <a>1F-도서관</a>
-                        </div>
-                    </div>
-                    <div class="moa_buttons">
-                        <div class="moa_button text_center">
-                            <div>
-                                <a><i class="fas fa-search"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="floor-right">
+                <img src="img/logo.png">
+                <div class="info"></div>
             </div>
         </div>
     </div>
@@ -152,7 +51,7 @@
     </div>
 </div><!--wrap-->
 
-<script src="js/moa.js"></script>
+<script src="js/main.js"></script>
 <script src="js/modal.js"></script>
 <script>
     jQuery(function ($) {
