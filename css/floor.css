@@ -41,7 +41,7 @@
 .w3-pagination li {float:left;margin:30px 10px;}
 .w3-pagination li a {font-size:15px; padding:10px;}
 
-#modal {width: 1000px}
+#modal {width: 1000px; height: 850px}
 
 .modal_title{
     background-color:#3b5e8b;
@@ -105,6 +105,14 @@
 .skipButton:hover{
     background-color: white;
     color: #333333;
+}
+
+.nextButton{
+    background-color:#3b5e8b;
+}
+.nextButton:hover{
+    background-color: white;
+    color: #3b5e8b;
 }
 
 .restartButton{

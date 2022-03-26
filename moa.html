@@ -14,7 +14,7 @@
         @import url("css/floor.css");
         @import url("css/w3.css");
 
-        html, body{
+        html, body {
             font-family: 'hi';
         }
     </style>
@@ -147,7 +147,10 @@
                 <header class="w3-container modal_title">
                             <span onclick="document.getElementById('id01').style.display='none'"
                                   class="w3-closebtn w3-padding-top"></span>
-                    <h2>1F G전시실</h2>
+                    <a id="1111">334</a><h2>1F G전시실<button id="modalClose" class="w3-right w3-white w3-border"
+                                       onclick="document.getElementById('id01').style.display='none'">X
+                    </button></h2>
+
                 </header>
 
                 <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
@@ -166,7 +169,7 @@
                 <div id="f1_2" class="w3-container city">
                     <div value="1" class="button_Group" style="visibility: hidden">
                     </div><!-- 버튼 -->
-                    <video class="video" value="1" src="" width="100%" height="100%" muted=""/>
+                    <video class="video" value="1" src="" width="100%" height="100%" muted=""></video>
                 </div>
 
                 <div id="f1_3" class="w3-container city">
@@ -179,12 +182,6 @@
                     <div value="3" class="button_Group" style="visibility: hidden">
                     </div><!-- 버튼 -->
                     <video class="video" value="3" src="" width="100%" height="100%" muted=""/>
-                </div>
-
-                <div class="w3-container w3-light-grey w3-padding">
-                    <button id="modalClose" class="w3-btn w3-right w3-white w3-border"
-                            onclick="document.getElementById('id01').style.display='none'">Close
-                    </button>
                 </div>
             </div>
         </div>
