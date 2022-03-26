@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>서울시립과학관</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/floor.css">
+    <link rel="stylesheet" href="/css/w3.css">
+    <style>
+        @import url("css/index.css");
+        @import url("css/floor.css");
+        @import url("css/w3.css");
+
+        html, body{
+            font-family: 'hi';
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+<div id="id" value="0"></div>
+<div class="wrap">
+    <div class="main_left">
+        <div class="main_left_box">
+            <div class="floor-left">
+                <img src="img/1f_main_text.png">
+                <a href="#" onclick="modalOpenHandler()" class="w3-btn"><img
+                        src="img/1f_평면도.png" style="margin-top:8%; max-width:90%;"></a>
+
+                <div id="id01" class="w3-modal">
+
+                    <div id="modal" class="w3-modal-content w3-card-4 w3-animate-zoom">
+
+                        <header class="w3-container modal_title">
+                            <span onclick="document.getElementById('id01').style.display='none'"
+                                  class="w3-closebtn w3-padding-top"></span>
+                            <h2>1F G전시실</h2>
+                        </header>
+
+                        <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+                            <li><a href="#" value="0" class="tablink" onclick="openCity(event, 'f1_1')">메인홀</a></li>
+                            <li><a href="#" value="1" class="tablink" onclick="openCity(event, 'f1_2')">G전시실</a></li>
+                            <li><a href="#" value="2" class="tablink" onclick="openCity(event, 'f1_3')">사이언스홀</a></li>
+                            <li><a href="#" value="3" class="tablink" onclick="openCity(event, 'f1_4')">도서관</a></li>
+                        </ul>
+
+                        <div id="f1_1" class="w3-container city">
+                            <div value="0" class="button_Group" style="visibility: hidden">
+                            </div><!-- 버튼 -->
+                            <video class="video" value="0" src="" width="100%" height="100%" muted=""/>
+                        </div>
+
+                        <div id="f1_2" class="w3-container city">
+                            <div value="1" class="button_Group" style="visibility: hidden">
+                            </div><!-- 버튼 -->
+                            <video class="video" value="1" src="" width="100%" height="100%" muted=""/>
+                        </div>
+
+                        <div id="f1_3" class="w3-container city">
+                            <div value="2" class="button_Group" style="visibility: hidden">
+                            </div><!-- 버튼 -->
+                            <video class="video" value="2" src="" width="100%" height="100%" muted=""/>
+                        </div>
+
+                        <div id="f1_4" class="w3-container city">
+                            <div value="3" class="button_Group" style="visibility: hidden">
+                            </div><!-- 버튼 -->
+                            <video class="video" value="3" src="" width="100%" height="100%" muted=""/>
+                        </div>
+
+                        <div class="w3-container w3-light-grey w3-padding">
+                            <button id="modalClose" class="w3-btn w3-right w3-white w3-border"
+                                    onclick="document.getElementById('id01').style.display='none'">Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="floor-right">
+                <img src="img/logo.png">
+                <table class="floor_intro">
+                    <tr>
+                        <td class="floor_intro_1"><a href="floorPi.html">πF</a></td>
+                        <td class="floor_intro_2"><p><span>교육실</span><br>교육준비실,교육실</p></td>
+                    </tr><!-- 첫번째 줄 끝 -->
+                    <tr><!-- 두번째 줄 시작 -->
+                        <td class="floor_intro_1"><a href="floor3.html">3F</a></td>
+                        <td class="floor_intro_2"><p><span>R전시실</span><br>순환-힘,에너지<br>1교육실, 2교육실, 실험실</p></td>
+                    </tr>
+                    <tr><!-- 세번째 줄 시작 -->
+                        <td class="floor_intro_1"><a href="floorRoot2.html">√2F</a></td>
+                        <td class="floor_intro_2"><p><span>O전시실</span><br>생존-인체, 유전,<br>물질 오픈랩(OPEN-LAB)</p></td>
+                    </tr>
+                    <tr><!-- 네번째 줄 시작 -->
+                        <td class="floor_intro_1"><a href="floor2.html">2F</a></td>
+                        <td class="floor_intro_2"><p><span>B전시실</span><br>연결-뇌과학, 우주, 수학,<br>카페테리아, 사무실, 3D 스페이스</p>
+                        </td>
+                    </tr>
+                    <tr><!-- 다번째 줄 시작 -->
+                        <td class="floor_intro_1"><a href="floor.html">1F</a></td>
+                        <td class="floor_intro_2"><p><span>G전시실</span><br>공존-생존, 환경 건축<br>아이디어 제작소, 지진체험관<br>사이언스홀,
+                            세미나실, 도서실 </p></td>
+                    </tr>
+                </table>
+            </div>
+        </div><!--main_left_box-->
+    </div><!--main_left-->
+
+    <div class="main_right_nav">
+        <ul>
+            <li></li>
+            <li style="margin-bottom: 50px;"><p>MAIN<br>MENU</p><a href="floor.html"><img src="img/층별안내.png"></a></li>
+            <li><a href="building.html"><img src="img/빌딩포렌식.png"></a></li>
+            <li><a href="outer.html"><img src="img/외관스캐닝.png"></a></li>
+            <li><a href="moa.html"><img src="img/구조부재스캐닝.png"></a></li>
+        </ul>
+    </div>
+</div><!--wrap-->
+<script src="js/floor.js"></script>
+<script src="js/modal.js"></script>
+<script>
+    jQuery(function($) {
+        $("body").css("display", "none");
+        $("body").fadeIn(1000);
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'notosan_bold';
+    src: url('../font/NotoSansKR-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.wrap { position:absolute; width:1920px; height:1080px; left: 50%; margin-left: -960px;}
+.main_left{width:92%; height: 1080px; float:left; background-image: url("../img/background.png");}
+.main_left_box{margin-top:7%; margin-left:5%;}
+.floor-left {width:75%;float:left;}
+.floor-right {width:25%;float:right;}
+.main_left_box:after {content:""; display:block; clear:both;}
+.main_right_nav {background-color:#3b5e8b; width:8%;min-width:115px;float:right; height: 1080px}
+.main_right_nav ul { padding-left:0; text-align:center;}
+.main_right_nav li {color:#fff; font-weight:900;height:18%; min-height:145px;}
+.main_right_nav li p {padding-bottom:40px;font-size:22px;}
+.main_right_nav li a:hover img {opacity:0.8; transition:0.2s; transform: scale(1.05);}
+.main_right_nav:after {content:""; display:block; clear:both;}
+.floor-right:after {content:""; display:block; clear:both;}
+
+.floor_intro {text-align:center; margin-top:20px; width:70%;}
+.floor_intro .floor_intro_1 {width:30%; height:120px; vertical-align:middle; border-bottom:1px solid #ddd; }
+.floor_intro .floor_intro_1 a {font-size:36px;font-weight:800;}
+.floor_intro .floor_intro_1 a:hover {background:#333; color:#fff; padding:5px;}
+.floor_intro .floor_intro_1 a:hover .floor_intro_2 {background:#eee;}
+.floor_intro .floor_intro_2 {width:70%; height:120px; vertical-align:middle; border-bottom:1px solid #ddd; }
+.floor_intro .floor_intro_2 p {font-size:13px;font-weight:300;}
+.floor_intro .floor_intro_2 span {font-size:14px; line-height:30px; font-weight:600;}
+
+
+.w3-modal-content .button_Group  {position: absolute; z-index:99; left:0; width:100%; top: 80%; text-align:center;}
+.button_Group button {text-align:center; font-size:17px; font-weight:900; padding:1% 2%;margin: 10px; border-radius: 10%; color: white;}
+.button_Group button:hover {opacity:0.9; transition:0.5s; font-weight:900;}
+
+
+#modal_into {position: absolute; z-index:999; top:10%; left:0; width:100%; text-align:center; width:100%; }
+
+.w3-pagination {border-bottom: 1px solid #eee;}
+.w3-pagination li {float:left;margin:30px 10px;}
+.w3-pagination li a {font-size:15px; padding:10px;}
+
+#modal {width: 1000px}
+
+.modal_title{
+    background-color:#3b5e8b;
+}
+
+.modal_title h2{
+    color: white;
+}
+
+.pillarButton{
+    background-color: #7b24a3;
+}
+.pillarButton:hover{
+    background-color: white;
+    color: #7b24a3;
+}
+
+.pillarButton1{
+    background-color: #7b24a3;;
+}
+.pillarButton1:hover{
+    background-color: white;
+    color: #7b24a3;
+}
+
+.pillarButton2{
+    background-color: #7b24a3;
+}
+.pillarButton2:hover{
+    background-color: white;
+    color: #7b24a3;
+}
+
+.slabButton{
+    background-color: #d42a26;
+}
+.slabButton:hover{
+    background-color: white;
+    color: #d42a26;
+}
+
+.boButton{
+    background-color: #3db4c6;
+}
+.boButton:hover{
+    background-color: white;
+    color: #3db4c6;
+}
+
+.wallButton{
+    background-color: #4473c5;
+}
+.wallButton:hover{
+    background-color: white;
+    color: #4473c5;
+}
+
+.skipButton{
+    background-color: #333333;
+}
+.skipButton:hover{
+    background-color: white;
+    color: #333333;
+}
+
+.restartButton{
+    background-color: #333333;
+}
+.restartButton:hover{
+    background-color: white;
+    color: #333333;
+}
+
+.backButton{
+    background-color: #333333;
+}
+.backButton:hover{
+    background-color: white;
+    color: #333333;
+}
+
+#modal{
+    position:absolute; width:1100px; left: 50%; margin-left: -550px;
+}

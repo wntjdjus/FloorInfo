@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>서울시립과학관</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/floor.css">
+    <link rel="stylesheet" type="text/css" href="css/moa.css">
+    <link rel="stylesheet" href="/css/w3.css">
+    <style>
+        @import url("css/index.css");
+        @import url("css/floor.css");
+        @import url("css/w3.css");
+
+        html, body{
+            font-family: 'hi';
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+</head>
+
+<body>
+<div id="id" value="3"></div>
+<div class="wrap">
+    <div class="main_left">
+        <div class="moa_title">
+            <div class="text_center moa_title_bar">
+                <div>
+                    <a class="title">서울시립과학관 한 눈에 보기</a>
+                </div>
+            </div>
+            <div class="text_center moa_title_sub">
+                <div>
+                </div>
+                <div>
+                    <a class="a_button" href="moa.html">1F</a>
+                </div>
+                <div>
+                    <a class="a_button" href="moa2.html">2F</a>
+                </div>
+                <div>
+                    <a class="a_button" href="moaRoot2.html">√2F</a>
+                </div>
+                <div>
+                    <a class="a_button floor_selected" href="moa3.html">3F</a>
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+        <div class="moa_body">
+            <div class="moa_item">
+                <div class="moa_item_in" value="0">
+                    <div class="moa_img text_center">
+                        <div>
+                            <a><img src="img/moa/R전시실.png"></a>
+                        </div>
+                    </div>
+                    <div class="moa_info text_center">
+                        <div>
+                            <a>3F-R전시실</a>
+                        </div>
+                    </div>
+                    <div class="moa_buttons">
+                        <div class="moa_button text_center">
+                            <div>
+                                <a><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="id01" class="w3-modal">
+
+            <div id="modal" class="w3-modal-content w3-card-4 w3-animate-zoom">
+
+                <header class="w3-container modal_title">
+                            <span onclick="document.getElementById('id01').style.display='none'"
+                                  class="w3-closebtn w3-padding-top"></span>
+                    <h2>3F R전시실</h2>
+                </header>
+
+                <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+                    <li><a href="#" value="0" class="tablink" onclick="openCity(event, 'f1_1')">R전시실</a></li>
+                </ul>
+
+                <div id="f1_1" class="w3-container city">
+                    <div value="0" class="button_Group" style="visibility: hidden">
+                    </div><!-- 버튼 -->
+                    <video class="video" value="0" src="" width="100%" height="100%" muted=""/>
+                </div>
+
+                <div class="w3-container w3-light-grey w3-padding">
+                    <button id="modalClose" class="w3-btn w3-right w3-white w3-border"
+                            onclick="document.getElementById('id01').style.display='none'">Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main_right_nav">
+        <ul>
+            <li></li>
+            <li style="margin-bottom: 50px;"><p>MAIN<br>MENU</p><a href="floor.html"><img src="img/층별안내.png"></a></li>
+            <li><a href="building.html"><img src="img/빌딩포렌식.png"></a></li>
+            <li><a href="outer.html"><img src="img/외관스캐닝.png"></a></li>
+            <li><a href="moa.html"><img src="img/구조부재스캐닝.png"></a></li>
+        </ul>
+    </div>
+</div><!--wrap-->
+
+<script src="js/moa.js"></script>
+<script src="js/modal.js"></script>
+<script>
+    jQuery(function ($) {
+        $("body").css("display", "none");
+        $("body").fadeIn(1000);
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>

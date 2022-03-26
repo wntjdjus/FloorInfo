@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>서울시립과학관</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/floor.css">
+    <style>
+        @import url("css/index.css");
+    </style>
+    <script type="text/javascript">
+    </script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+<div class="wrap">
+    <video id="video1" width="100%" height="100%" muted="">
+        <source src="video/main.MP4">
+    </video>
+</div>
+<script>
+    var video = document.getElementById('video1')
+    video.play();
+
+    document.getElementById('video1').addEventListener('ended', videoHandler, false);
+
+    function videoHandler(e) {
+        jQuery(function ($) {
+            $("body").fadeOut(1000, redirectPage);
+        });
+
+        function redirectPage() {
+            var link = 'floor.html';
+            location.href = link;
+        }
+
+    }
+</script>
+</body>
+</html>
