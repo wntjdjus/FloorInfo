@@ -15,6 +15,7 @@
 .main_right_nav {background-color:#3b5e8b; width:8%;min-width:115px;float:right; height: 1080px}
 .main_right_nav ul { padding-left:0; text-align:center;}
 .main_right_nav li {color:#fff; font-weight:900;height:18%; min-height:145px;}
+.main_right_nav li a {margin-top:40px;font-size:22px;}
 .main_right_nav li p {padding-bottom:40px;font-size:22px;}
 .main_right_nav li a:hover img {opacity:0.8; transition:0.2s; transform: scale(1.05);}
 .main_right_nav:after {content:""; display:block; clear:both;}
@@ -41,7 +42,7 @@
 .w3-pagination li {float:left;margin:30px 10px;}
 .w3-pagination li a {font-size:15px; padding:10px;}
 
-#modal {width: 1000px; height: 850px}
+#modal {width: 1000px; height: 810px}
 
 .modal_title{
     background-color:#3b5e8b;

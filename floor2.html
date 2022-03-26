@@ -37,7 +37,11 @@
                         <header class="w3-container modal_title">
                             <span onclick="document.getElementById('id01').style.display='none'"
                                   class="w3-closebtn w3-padding-top"></span>
-                            <h2>2F B전시실</h2>
+                            <h2>2F B전시실
+                                <a href="#" id="modalClose" class="w3-btn w3-right"
+                                   onclick="document.getElementById('id01').style.display='none'">X
+                                </a>
+                            </h2>
                         </header>
 
                         <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
@@ -48,12 +52,6 @@
                             <div value="0" class="button_Group" style="visibility: hidden">
                             </div><!-- 버튼 -->
                             <video class="video" value="0" src="" width="100%" height="100%" muted=""/>
-                        </div>
-
-                        <div class="w3-container w3-light-grey w3-padding">
-                            <button id="modalClose" class="w3-btn w3-right w3-white w3-border"
-                                    onclick="document.getElementById('id01').style.display='none'">Close
-                            </button>
                         </div>
                     </div>
                 </div>
@@ -92,11 +90,11 @@
 
     <div class="main_right_nav">
         <ul>
-            <li></li>
-            <li style="margin-bottom: 50px;"><p>MAIN<br>MENU</p><a href="floor.html"><img src="img/층별안내.png"></a></li>
-            <li><a href="building.html"><img src="img/빌딩포렌식.png"></a></li>
-            <li><a href="outer.html"><img src="img/외관스캐닝.png"></a></li>
-            <li><a href="moa.html"><img src="img/구조부재스캐닝.png"></a></li>
+            <li style="padding-top: 140px"><a href="main.html">MAIN<br/>MENU</a></li>
+            <li style="padding-top: 40px"><a href="floor.html"><img src="img/층별안내.png"></a></li>
+            <li style="padding-top: 40px"><a href="building.html"><img src="img/빌딩포렌식.png"></a></li>
+            <li style="padding-top: 40px"><a href="outer.html"><img src="img/외관스캐닝.png"></a></li>
+            <li style="padding-top: 40px"><a href="moa.html"><img src="img/구조부재스캐닝.png"></a></li>
         </ul>
     </div>
 </div><!--wrap-->
